@@ -1,0 +1,67 @@
+<div id="box-container">
+  <div class="lang-option">
+    <h3>{{pageDetailsModels.language}}</h3>
+    <select [(ngModel)]="lang" (change)="onChange($event)">
+      <option name="eng" value="en">English</option>
+      <option name="dutch" value="nl">Dutch</option>
+      <!--<option *ngFor="let l of language" [ngValue]="l"> {{l.name}} </option>-->
+  </select>
+    <!--<select>
+    <option name="eng" value="en">English</option>
+    <option name="dutch" value="nl">Dutch</option>
+  </select>-->
+  </div>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div ngModelGroup="userData">
+      <div class="title">
+        <h1>{{pageDetailsModels.header}}</h1>
+      </div>
+      <div class="form-elements">
+        <p>{{pageDetailsModels.details}}</p>
+        <div class="row">
+
+          <p class="success">{{pageSuccess}}</p>
+           <p class="error">{{pageError}}</p>
+
+          <label *ngIf="pnrId.valid||!pnrId.dirty">
+        {{pageDetailsModels.pnr}}
+      </label>
+          <label class="error" *ngIf="!pnrId.valid&&pnrId.dirty">
+       {{pageDetailsModels.pnrError}}
+      </label>
+          <input id="pnrId" name="pnrId" #pnrId="ngModel" class="input" [(ngModel)]="checkinDetailsModels.pnr" type="text" pattern="^[a-zA-Z0-9]*$"
+            maxlength="10" required placeholder={{pageDetailsModels.pnrLabel}}>
+
+
+
+
+        </div>
+        <div class="row">
+         
+          <label *ngIf="firstname.valid||!firstname.dirty">
+        {{pageDetailsModels.firstnameLabel}}
+      </label>
+          <label class="error" *ngIf="!firstname.valid&&firstname.dirty">
+      {{pageDetailsModels.firstnameError}}
+      </label>
+
+          <input class="input" id="firstname" name="firstname" #firstname="ngModel" [(ngModel)]="checkinDetailsModels.firstname" type="text"
+            pattern="^(\S+)$" required placeholder={{pageDetailsModels.firstname}}>
+        </div>
+        <div class="row">
+          <label *ngIf="lastname.valid||!lastname.dirty">
+      {{pageDetailsModels.lastnameLabel}}
+      </label>
+          <label class="error" *ngIf="(!lastname.valid&&lastname.dirty)||lastname.empty">
+      {{pageDetailsModels.lastnameError}}
+      </label>
+          <label></label>
+          <input class="input" id="lastname" name="lastname" #lastname="ngModel" [(ngModel)]="checkinDetailsModels.lastname" type="text"
+            pattern="^(\S+)$" required placeholder={{pageDetailsModels.lastname}}>
+        </div>
+
+        <button type="submit" [disabled]="!f.valid">{{pageDetailsModels.submit}}</button>
+      </div>
+    </div>
+  </form>
+</div>

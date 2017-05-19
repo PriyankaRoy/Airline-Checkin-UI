@@ -1,0 +1,134 @@
+#box-container
+{
+  width : 45%;
+  height : auto;
+  overflow : auto ;
+ /*border : 1px solid #C5C5C5;*/
+  color : #00a1de;
+  position : absolute;
+  left : 27.6%;
+  border-top : none;
+  text-align : left;
+  margin : 2%;
+  padding : 2%;
+  background : white;
+  border : 1px solid #00a1de;
+}
+.title{
+    border-bottom: 1px solid black;
+    position: relative;
+}
+input[type=text], input[type=number] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text]:focus, input[type=number]:focus {
+    border-color:#333;
+}
+button[type=submit] {
+    padding:11px 19px; 
+    background:#00a1de;
+    color: white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    margin-left: 41%;
+    width: 20%;
+}
+select{
+    position: absolute;
+    width: 100%;
+    margin-top: -15px;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+h1{
+    font-size: 32px;
+    font-family: NoaLight,verdana,arial,sans-serif;
+    width:50%;
+}
+.row .input{
+    display: inline-block;
+    margin:3%;
+}
+.lang-option{
+    float: right;  
+    position: relative;  
+    z-index: 9999;
+}
+.error{
+    color: red;
+}
+
+.success{
+    color:green;
+}
+
+
+
+/* ----Mobile ----------- */
+@media only screen and (min-device-width: 414px) {
+    #box-container
+    {    
+    top: 5%;
+    height: 55%;
+    width: 92%;
+    left: 0px;
+}
+button[type=submit] {
+    font-size: 24px;
+    font-family: "Times New Roman";
+    width: 25%;
+    margin-top: 11%;
+    margin-left: 38%;
+}
+.disclaimer-text {
+    font-size: 24px;
+    font-family: "Times New Roman";
+}
+.label-text {
+    font-size: 22px;
+    font-family: "Times New Roman";
+}
+}
+/*-----Media Query Breakpoints------*/
+/* --------iPads (Potrait) ----------- */
+@media only screen and (min-device-width : 768px)  {
+#box-container
+    {    
+    top: 5%;
+    height: 55%;
+    width: 92%;
+    left: 0px;
+}
+button[type=submit] {
+    font-size: 24px;
+    font-family: "Times New Roman";
+    width: 25%;
+    margin-top: 0%;
+    margin-left: 38%;
+}
+.disclaimer-text {
+    font-size: 24px;
+    font-family: "Times New Roman";
+}
+.label-text {
+    font-size: 22px;
+    font-family: "Times New Roman";
+}
+}
+/* --------iPads (Landscape) ----------- */
+@media only screen and (min-device-width : 992px)  {
+    #box-container
+    {    
+    top: 5%;
+    height: 77%;
+    width: 92%;
+    left: 0px;
+}
+}
