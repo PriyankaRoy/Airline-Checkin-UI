@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CheckinComponent } from './checkin/checkin.component';
+import {TranslateModule} from 'ng2-translate';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CheckinComponent } from './checkin/checkin.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TranslateModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
