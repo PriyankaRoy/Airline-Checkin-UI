@@ -1,6 +1,8 @@
 # AirlineCheckin
 
-It's a Sample Airline CheckIn Application using @Angular-Cli as front-end and Node.js as middleware. It also supports multi language conversion feature. I've written few basic Unit Test Cases using Karma.js for POST service call.
+It's a Sample Airline CheckIn Application using @Angular-Cli as front-end and Node.js as middleware. It also supports multi language conversion feature. This application is being built on Responsive Designing. It supports all screen sizes like Mobile, Tablets & Desktop. 
+
+I've written few basic Unit Test Cases using Karma.js for POST service call. 
 
 ## Screens
 
