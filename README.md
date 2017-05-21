@@ -1,6 +1,6 @@
 # AirlineCheckin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+It's a Sample Airline CheckIn Application using @Angular-Cli as front-end and Node.js as middleware. It also supports multi language conversion feature. I've written few basic Unit Test Cases using Karma.js for POST service call.
 
 ## Development server
 
