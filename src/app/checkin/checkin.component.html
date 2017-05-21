@@ -6,7 +6,6 @@
   </select>
   </div>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <div ngModelGroup="userData">
       <div class="title">
         <h1>{{"header"|translate}}</h1>
       </div>
@@ -35,7 +34,7 @@
       </label>
 
           <input class="input" id="firstname" name="firstname" #firstname="ngModel" [(ngModel)]="checkinDetailsModels.firstname" type="text"
-            pattern="^(\S+)$" required placeholder='{{"firstname"|translate}}'>
+            pattern="^[a-zA-Z]+$" required placeholder='{{"firstname"|translate}}'>
         </div>
         <div class="row">
           <label *ngIf="lastname.valid||!lastname.dirty">
@@ -51,6 +50,5 @@
 
         <button type="submit" [disabled]="!f.valid">{{"submit"|translate}}</button>
       </div>
-    </div>
   </form>
 </div>
