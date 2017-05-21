@@ -2,6 +2,11 @@
 
 It's a Sample Airline CheckIn Application using @Angular-Cli as front-end and Node.js as middleware. It also supports multi language conversion feature. I've written few basic Unit Test Cases using Karma.js for POST service call.
 
+##Screens
+
+###Check in screen in English 
+<img src="screens/Checkin_en.PNG" align="right" />
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
